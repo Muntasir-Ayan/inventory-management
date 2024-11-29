@@ -1,0 +1,6 @@
+asgiref
+Django
+djangorestframework
+sqlparse
+psycopg2-binary
+typing_extensions
