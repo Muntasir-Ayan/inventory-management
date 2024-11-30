@@ -1,0 +1,22 @@
+http://localhost:8080
+
+Command:
+
+docker-compose build
+
+docker-compose up
+
+docker-compose down 
+
+execution:
+docker-compose exec web python manage.py makemigrations
+docker-compose exec web python manage.py migrate
+
+bash terminal open:
+docker-compose exec web python manage.py shell
+
+
+importing:
+from django.contrib.auth.models import User
+from django.contrib.gis.geos import Point
+from inventory.models import Location, Accommodation, LocalizeAccommodation

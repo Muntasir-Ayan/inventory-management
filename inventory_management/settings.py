@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # added by me
-    'inventory'
+    'inventory',
     "rest_framework",
     'django.contrib.gis',
 ]
