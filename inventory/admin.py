@@ -1,7 +1,8 @@
 from django.contrib import admin
+from leaflet.admin import LeafletGeoAdmin
 from .models import Location, Accommodation, LocalizeAccommodation
 
-class LocationAdmin(admin.ModelAdmin):
+class LocationAdmin(LeafletGeoAdmin):
     list_display = ('id', 'title', 'location_type', 'country_code', 'state_abbr', 'city', 'created_at', 'updated_at')
     search_fields = ('title', 'country_code', 'state_abbr', 'city')
     list_filter = ('location_type',)
@@ -9,7 +10,7 @@ class LocationAdmin(admin.ModelAdmin):
 admin.site.register(Location, LocationAdmin)
 
 # Registering Accommodation Model with admin
-class AccommodationAdmin(admin.ModelAdmin):
+class AccommodationAdmin(LeafletGeoAdmin):
     list_display = ('id', 'title', 'country_code', 'bedroom_count', 'review_score', 'usd_rate', 'published', 'user', 'created_at', 'updated_at')
     search_fields = ('title', 'country_code', 'user__username')  # Searching by accommodation title and user username
     list_filter = ('published', 'country_code', 'bedroom_count')

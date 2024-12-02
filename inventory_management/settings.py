@@ -43,8 +43,20 @@ INSTALLED_APPS = [
     'inventory',
     "rest_framework",
     'django.contrib.gis',
+    'leaflet',
     
 ]
+# added for Leaflet
+LEAFLET_CONFIG = {
+    'DEFAULT_CENTER': (0, 0),  # Default map center (latitude, longitude)
+    'DEFAULT_ZOOM': 2,         # Default zoom level
+    'MIN_ZOOM': 1,             # Minimum zoom level
+    'MAX_ZOOM': 18,            # Maximum zoom level
+    'TILES': 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',  # OpenStreetMap tiles
+    'ATTRIBUTION_PREFIX': 'Powered by Django Leaflet',
+}
+# added for leaflet
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
