@@ -15,6 +15,14 @@ class AccommodationAdmin(admin.ModelAdmin):
     list_filter = ('published', 'country_code', 'bedroom_count')
     list_editable = ('published',)  # Allow editing the 'published' field directly in the list view
 
+    # Override the get_queryset method to filter by the logged-in user
+    def get_queryset(self, request):
+        queryset = super().get_queryset(request)
+        if request.user.groups.filter(name='Property Owners').exists():
+            # If the user is in the "Property Owners" group, filter accommodations by user
+            queryset = queryset.filter(user=request.user)
+        return queryset
+
 admin.site.register(Accommodation, AccommodationAdmin)
 
 # Registering LocalizeAccommodation Model with admin
