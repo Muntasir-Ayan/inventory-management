@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'inventory',
     "rest_framework",
     'django.contrib.gis',
+    
 ]
 
 MIDDLEWARE = [
