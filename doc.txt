@@ -1,4 +1,4 @@
-http://localhost:8080
+http://localhost:8000
 to check all the docker container:
     docker ps -a
 to remove a container:
@@ -33,9 +33,19 @@ sitemap_generations:
 
 Data addding:
 
-from inventory.models import Location, Accommodation, LocalizeAccommodation
-from django.contrib.auth.models import User
-from django.contrib.gis.geos import Point
+    from inventory.models import Location, Accommodation, LocalizeAccommodation
+    from django.contrib.auth.models import User
+    from django.contrib.gis.geos import Point
+
+
+Testing:
+    docker-compose exec web coverage run manage.py test
+    docker-compose exec web coverage report
+    docker-compose exec web coverage html
+
+data adding:
+    docker-compose exec web python manage.py add_data
+
 
 # Create Location Instances
 continent = Location.objects.create(
