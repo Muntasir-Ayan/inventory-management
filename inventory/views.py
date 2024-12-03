@@ -15,7 +15,7 @@ def signup(request):
             property_owners_group.user_set.add(user)
 
             login(request, user)  # Automatically log in the user after signing up
-            return redirect('home')  # Redirect to the home page or any other page after signup
+            return redirect('/admin')  # Redirect to the home page or any other page after signup
     else:
         form = CustomUserCreationForm()
 
