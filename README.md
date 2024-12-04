@@ -35,36 +35,36 @@ The project directory is structured as follows:
 ```plaintext
 inventory-management/
 │
-├── inventory_management/           # User-related operations (register, login, profile)
-│   ├── __init__.py              # Main application file
-│   ├── asgi.py/             # Stores user data in JSON
-│   ├── settings.py/              # Unit tests for user service
-│   ├── urls.py/              # Unit tests for user service
-│   ├── wsgi.py/              # Unit tests for user service
+├── inventory_management/           
+│   ├── __init__.py             
+│   ├── asgi.py/             
+│   ├── settings.py/             
+│   ├── urls.py/           
+│   ├── wsgi.py/              
 │
-├── inventory/    # Handles hotel destination information
-│   ├── __init__.py              # Main application file
-│   ├── templates/inventory              # Unit tests for user service
+├── inventory/    
+│   ├── __init__.py           
+│   ├── templates/inventory             
 |                 ├── signup.html 
-│   ├── management/              # Unit tests for user servic
+│   ├── management/             
 |       ├── commands 
 |             ├── add_data.py
 |             ├── sitemap_generator.py 
-│   ├── migrations/              # Unit tests for user service
-│   ├── apps.py/              # Unit tests for user service
-│   ├── admin.py/             # Stores user data in JSON
-│   ├── forms.py/              # Unit tests for user service
-│   ├── models.py/              # Unit tests for user service
-│   ├── tests.py/              # Unit tests for user service
-│   ├── urls.py/              # Unit tests for user service
-│   ├── views.py/              # Unit tests for user service
+│   ├── migrations/             
+│   ├── apps.py/             
+│   ├── admin.py/            
+│   ├── forms.py/              
+│   ├── models.py/             
+│   ├── tests.py/             
+│   ├── urls.py/           
+│   ├── views.py/             
 │
-├── docker-compose.yml           # Authentication microservice
-├── Dockerfile              # Main application file
-├── .env              # Main application file
-├── .gitignore              # Ignore unnecessary files from version control
-├── README.md               # Project documentation
-├── requirements.txt        # Python dependencies
+├── docker-compose.yml          
+├── Dockerfile             
+├── .env             
+├── .gitignore             
+├── README.md              
+├── requirements.txt      
 ```
 ---
 
