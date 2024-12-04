@@ -4,6 +4,28 @@
     "locations": [
       {
         "California": "us/california"
+      },
+      {
+        "Bangladesh": "us/bangladesh"
+      }
+    ]
+  },
+  {
+    "Canada": "ca",
+    "locations": [
+      {
+        "Ontario": "ca/ontario"
+      },
+      {
+        "hello-location": "ca/hello-location"
+      }
+    ]
+  },
+  {
+    "Bangladesh": "us",
+    "locations": [
+      {
+        "Dhaka": "us/dhaka"
       }
     ]
   },
@@ -12,6 +34,18 @@
     "locations": [
       {
         "Berlin": "de/berlin"
+      }
+    ]
+  },
+  {
+    "hello-location": "us",
+    "locations": []
+  },
+  {
+    "Frances": "fr",
+    "locations": [
+      {
+        "\u00cele-de-France": "fr/\u00eele-de-france"
       }
     ]
   }
