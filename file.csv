@@ -1,0 +1,12 @@
+id,title,center,parent,location_type,country_code,state_abbr,city,created_at,updated_at
+1,North America,POINT(-100 40),,continent,US,,,
+2,United States,POINT(-98 38),1,country,US,,,
+3,California,POINT(-119 37),2,state,US,CA,,
+4,Los Angeles,POINT(-118 34),3,city,US,CA,Los Angeles,2024-12-01 12:00:00,2024-12-01 12:00:00
+5,Canada,POINT(-106 56),1,country,CA,,,
+6,Ontario,POINT(-80 50),5,state,CA,ON,,
+7,Toronto,POINT(-79 43),6,city,CA,ON,Toronto,2024-12-01 13:00:00,2024-12-01 13:00:00
+8,Europe,POINT(10 50),,continent,EU,,,
+9,France,POINT(2 46),8,country,FR,,,
+10,Île-de-France,POINT(2 48),9,state,FR,IDF,,
+11,Paris,POINT(2.3522 48.8566),10,city,FR,IDF,Paris,2024-12-01 14:00:00,2024-12-01 14:00:00

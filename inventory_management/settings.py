@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "rest_framework",
     'django.contrib.gis',
     'leaflet',
+    'import_export',
     
 ]
 # added for Leaflet
@@ -73,7 +74,10 @@ ROOT_URLCONF = 'inventory_management.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+         'DIRS': [
+            # Ensure the template directories are correctly set up
+            BASE_DIR / 'templates',  # Or whatever your template folder is
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

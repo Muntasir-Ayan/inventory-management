@@ -6,5 +6,13 @@
         "California": "us/california"
       }
     ]
+  },
+  {
+    "Germany": "de",
+    "locations": [
+      {
+        "Berlin": "de/berlin"
+      }
+    ]
   }
 ]
