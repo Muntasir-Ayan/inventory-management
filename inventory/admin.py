@@ -10,7 +10,7 @@ class LocationResource(resources.ModelResource):
         # Optional: you can specify which fields to import/export here
         fields = ('id', 'title', 'center', 'parent', 'location_type', 'country_code', 'state_abbr', 'city', 'created_at', 'updated_at')
 
-class LocationAdmin(ImportExportModelAdmin):
+class LocationAdmin(ImportExportModelAdmin,LeafletGeoAdmin):
     list_display = ('id', 'title', 'location_type', 'country_code', 'state_abbr', 'city', 'created_at', 'updated_at')
     search_fields = ('title', 'country_code', 'state_abbr', 'city')
     list_filter = ('location_type',)
