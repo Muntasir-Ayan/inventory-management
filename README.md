@@ -25,4 +25,45 @@ This project involves developing a **Property Management System** using **Django
 - **Python 3.8+**  
 - **Django 4.x**  
 - **PostgreSQL 13+** with **PostGIS** extension  
-- **Docker** 
+- **Docker**
+
+---
+
+## Project Architecture
+
+The project directory is structured as follows:
+
+```plaintext
+inventory-management/
+│
+├── inventory_management/           # User-related operations (register, login, profile)
+│   ├── __init__.py              # Main application file
+│   ├── asgi.py/             # Stores user data in JSON
+│   ├── settings.py/              # Unit tests for user service
+│   ├── urls.py/              # Unit tests for user service
+│   ├── wsgi.py/              # Unit tests for user service
+│
+├── inventory/    # Handles hotel destination information
+│   ├── __init__.py              # Main application file
+│   ├── templates/inventory              # Unit tests for user service
+|                 ├── signup.html 
+│   ├── management/              # Unit tests for user servic
+|       ├── commands 
+|             ├── add_data.py
+|             ├── sitemap_generator.py 
+│   ├── migrations/              # Unit tests for user service
+│   ├── apps.py/              # Unit tests for user service
+│   ├── admin.py/             # Stores user data in JSON
+│   ├── forms.py/              # Unit tests for user service
+│   ├── models.py/              # Unit tests for user service
+│   ├── tests.py/              # Unit tests for user service
+│   ├── urls.py/              # Unit tests for user service
+│   ├── views.py/              # Unit tests for user service
+│
+├── docker-compose.yml           # Authentication microservice
+├── Dockerfile              # Main application file
+├── .env              # Main application file
+├── .gitignore              # Ignore unnecessary files from version control
+├── README.md               # Project documentation
+├── requirements.txt        # Python dependencies
+```
