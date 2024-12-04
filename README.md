@@ -67,3 +67,20 @@ inventory-management/
 ├── README.md               # Project documentation
 ├── requirements.txt        # Python dependencies
 ```
+---
+
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Muntasir-Ayan/Hotel-Api-Flask-Assignment-5.git
+   cd Hotel-Api-Flask-Assignment-5
+
+2. **Create and activate a virtual environment**:
+   ```bash
+    python -m venv venv
+    source venv/bin/activate  # macOS/Linux
+    venv\Scripts\activate     # Windows
+3. **Install project dependencies**:
+   ```bash
+    pip install -r requirements.txt
