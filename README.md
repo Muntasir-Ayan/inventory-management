@@ -171,3 +171,10 @@ Admin can login http://127.0.0.1:8000/admin in this url.
 | `language`      | `String (2)`          | Language code                            |
 | `description`   | `Text`                | Localized property description           |
 | `policy`        | `JSONB`               | Localized property policies              |
+
+### Location CSV Data Importing 
+admin can import location data using csv file. <br>
+![image](https://github.com/user-attachments/assets/9db87a43-c1d4-4b69-ac13-51df183ad95f)
+![image](https://github.com/user-attachments/assets/ebee4c70-031b-41d7-93ef-d887b2180bd6)
+
+
