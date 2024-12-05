@@ -89,14 +89,19 @@ inventory-management/
     docker-compose up
    ```
    this will running on http://127.0.0.1:8000 and signup landing page.
+   <br>
+   To down docker :
+      ```bash
+    docker-compose down
+
    
-5. **Docker Migrations command**:
+6. **Docker Migrations command**:
    Open another new terminal
    ```bash
     docker-compose exec web python manage.py makemigrations
     docker-compose exec web python manage.py migrate
 
-6. **Creating Superuser or Admin**:
+7. **Creating Superuser or Admin**:
    ```bash
       docker-compose exec web python manage.py createsuperuser
 Admin can login http://127.0.0.1:8000/admin in this url.
@@ -114,6 +119,10 @@ Admin can login http://127.0.0.1:8000/admin in this url.
 8. **Adding some dummy data**:
    ```bash
        docker-compose exec web python manage.py add_data
+### User Loging
+   After singup a user can not login, untill admin make the user 'staff status'. Then user can login and see their accomodations. (Make sure user should add on Property owners group)
+   ![image](https://github.com/user-attachments/assets/26937431-9dfe-439b-a3f9-b1191ac86d37)
+
 
 ### Location Model  
 | **Field**       | **Type**            | **Description**                          |
