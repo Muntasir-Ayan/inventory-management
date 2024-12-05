@@ -95,22 +95,18 @@ inventory-management/
     docker-compose down
 
    
-6. **Docker Migrations command**:
+5. **Docker Migrations command**:
    Open another new terminal
    ```bash
     docker-compose exec web python manage.py makemigrations
     docker-compose exec web python manage.py migrate
 
-7. **Creating Superuser or Admin**:
+6. **Creating Superuser or Admin**:
    ```bash
       docker-compose exec web python manage.py createsuperuser
 Admin can login http://127.0.0.1:8000/admin in this url.
    
-6. **Testing**:
-   ```bash
-    docker-compose exec web coverage run manage.py test
-    docker-compose exec web coverage report
-    docker-compose exec web coverage html
+
 
 7. **sitemap_generations**:
    ```bash
@@ -119,11 +115,26 @@ Admin can login http://127.0.0.1:8000/admin in this url.
 8. **Adding some dummy data**:
    ```bash
        docker-compose exec web python manage.py add_data
+
+9. **Testing**:
+   ```bash
+    docker-compose exec web coverage run manage.py test
+    docker-compose exec web coverage report
+    docker-compose exec web coverage html
+   
 ### User Loging
-   After singup a user can not login, untill admin make the user 'staff status'. Then user can login and see their accomodations. (Make sure user should add on Property owners group)
+   After singup a user can not login, untill admin make the user 'staff status'. Then user can login and see their accomodations. (Make sure user should add on Property owners group, Though it will added automatically)
    ![image](https://github.com/user-attachments/assets/26937431-9dfe-439b-a3f9-b1191ac86d37)
-
-
+## .env file 
+   If you want to change .env file you can change it. If you change .env file, you have to configure docker-compose.yml according to that. For simplicity, I have added .env file also.
+   ```bash
+         PG_USER=postgres
+         PG_PASSWORD=postgres
+         PG_DB=postgres
+         PG_HOST=db
+         PG_PORT=5432
+   ```
+### DATA MODEL
 ### Location Model  
 | **Field**       | **Type**            | **Description**                          |
 |-----------------|---------------------|------------------------------------------|
